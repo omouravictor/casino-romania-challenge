@@ -8,14 +8,20 @@ public class CasinoRomania {
     public void play() {
         Scanner scanner = new Scanner(System.in);
 
-        int n, k, m;
+        int n;
+        int k;
+        int m;
 
         while ((n = scanner.nextInt()) != 0) {
             k = scanner.nextInt();
             m = scanner.nextInt();
 
             PlayersCircularLinkedList players = new PlayersCircularLinkedList(n);
-            Node playersInitialNode, kPlayerNode, mPlayerNode, auxK, auxM;
+            Node playersInitialNode;
+            Node kPlayerNode;
+            Node mPlayerNode;
+            Node auxK;
+            Node auxM;
 
             playersInitialNode = players.getInitialNode();
             kPlayerNode = playersInitialNode;
